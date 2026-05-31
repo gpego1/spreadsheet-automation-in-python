@@ -1,63 +1,132 @@
 # Spreadsheet Automation in Python
 
-Este projeto é uma ferramenta avançada de automação financeira que utiliza Python para analisar dados de orçamentos armazenados no **Google Sheets**. O sistema automatiza desde a leitura em tempo real até à geração de relatórios estratégicos com auxílio de Inteligência Artificial.
+This project is an advanced financial automation tool built with Python that analyzes budget and financial data stored in **Google Sheets**. The system automates everything from real-time spreadsheet reading to generating strategic reports powered by Artificial Intelligence.
 
 ---
 
-## 🚀 Como funciona o projeto
-O script atua como um "analista de dados" pessoal, seguindo um fluxo automatizado:
+## 🚀 How the Project Works
 
-1. **Conexão em Tempo Real:** Utiliza a API do Google Sheets para ler os seus dados financeiros diretamente da nuvem.
-2. **Processamento de Dados:** Utiliza a biblioteca `pandas` para estruturar os dados, tratar formatos e realizar limpezas necessárias.
-3. **Extração Seletiva:** O script gera automaticamente um ficheiro `data.csv` contendo apenas as informações essenciais (nome do funcionário, receitas, gastos e categorias), otimizando o envio para processamento.
-4. **Análise por IA:** O ficheiro processado é enviado para um agente de IA, que realiza uma análise crítica de receita vs. gastos, identifica problemas, riscos e sugere melhorias baseadas nos números reais.
-5. **Feedback Estratégico:** O sistema retorna um relatório sumarizado e estruturado para apoiar a sua tomada de decisão financeira.
+The script acts as a personal data analyst by following an automated workflow:
 
+1. **Real-Time Connection**
+   Uses the Google Sheets API to read financial data directly from the cloud.
 
+2. **Data Processing**
+   Uses the `pandas` library to structure, clean, and process spreadsheet data.
+
+3. **Selective Extraction**
+   Automatically generates a `data.csv` file containing only the essential information, such as employee names, income, expenses, and categories, optimizing the data sent for analysis.
+
+4. **AI Analysis**
+   The processed file is sent to an AI agent that performs a detailed analysis of income vs. expenses, identifies risks and financial issues, and suggests possible improvements based on real data.
+
+5. **Strategic Feedback**
+   The system returns a summarized and structured financial report to support decision-making.
 
 ---
 
-## 📋 Pré-requisitos
+## 📋 Prerequisites
 
-Antes de executar o código, certifique-se de ter:
-* Python 3.x instalado.
-* Uma conta no [Google Cloud Console](https://console.cloud.google.com/) para gerar as suas credenciais de API.
+Before running the project, make sure you have:
+
+* Python 3.x installed
+* A Google Cloud account to generate Google Sheets API credentials
+* An OpenAI-compatible API key
 
 ---
 
-## 🛠️ Passo a Passo para Configuração
+## 🛠️ Setup Guide
 
-### 1. Preparação da Planilha
-1. Transfira o ficheiro de exemplo `dados_financeiros.xlsx`.
-2. Abra o seu **Google Drive**.
-3. Faça o upload do ficheiro `.xlsx` e abra-o com o **Google Planilhas (Google Sheets)**.
-4. No canto superior direito, clique em **Partilhar** e adicione o e-mail da sua "Conta de Serviço" (gerada no Google Cloud - encontrada no campo `client_email` do seu ficheiro JSON) com permissão de **Editor**.
+### 1. Prepare the Spreadsheet
 
-### 2. Configuração do Ambiente
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/gpego1/spreadsheet-automation-in-python.git](https://github.com/gpego1/spreadsheet-automation-in-python.git)
-   cd spreadsheet-automation-in-python
+1. Download the example file `dados_financeiros.xlsx`
+2. Open your **Google Drive**
+3. Upload the `.xlsx` file and open it using **Google Sheets**
+4. Click **Share** in the top-right corner
+5. Add your Google Cloud **Service Account email** (found in the `client_email` field of your credentials JSON file) with **Editor** permissions
 
-2. Crie Ambiente Virtual
-    ```bash
-    python -m venv venv
-    .\venv\Scripts\activate
+---
 
-3. Instale dependências
-   ```bash
-   pip install -r requirements.txt
+### 2. Clone the Repository
 
-### 3. Variáveis de Ambiente
-   1. Configurar arquivo .env
-   ```bash
-      FILE_NAME=caminho/para/o/seu/credentials.json
-      OPENAI_API_KEY=sua_api_key
-      BASE_URL=sua base_url
-      MODEL=seu modelo de llm
+```bash
+git clone https://github.com/gpego1/spreadsheet-automation-in-python.git
+cd spreadsheet-automation-in-python
+```
 
-### 4. Executar projeto
-   1. Executar o projeto
-   ```bash 
-       python main.py
+---
 
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+#### Activate the virtual environment
+
+**Windows**
+
+```bash
+.\venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 5. Configure Environment Variables
+
+Create a `.env` file in the root directory of the project:
+
+```env
+FILE_NAME=path/to/your/credentials.json
+OPENAI_API_KEY=your_api_key
+BASE_URL=your_llm_base_url
+MODEL=your_llm_model
+```
+
+---
+
+## ▶️ Running the Project
+
+Run the application with:
+
+```bash
+python main.py
+```
+
+---
+
+## 📦 Technologies Used
+
+* Python
+* Pandas
+* Google Sheets API
+* OpenAI API
+* dotenv
+
+---
+
+## 📄 Example Use Cases
+
+* Financial spreadsheet automation
+* AI-powered budget analysis
+* Expense monitoring
+* Automated reporting
+* Business financial insights
+
+---
+
+Link for the SpreadSheet: https://docs.google.com/spreadsheets/d/14l7audhvE_kPdIpi2iUXNvxESGtpPyZbvNBZRGskUR4/edit?usp=sharing
