@@ -22,7 +22,9 @@ def generate_analysis(file_name):
         messages = [
             {
                 "role": "system",
-                "content": "You are a data analyst who must receive data from a spreadsheet and, based on your knowledge, report on the potential problems a given company may face based on employee expenses. In addition, you must also suggest possible ways to generate more profit.  "
+                "content": """You are a data analyst who must receive data from a spreadsheet and, based on your knowledge, 
+                report on the potential problems a given company may face based on employee expenses. 
+                In addition, you must also suggest possible ways to generate more profit."""
             },
             {
                 "role": "user",
