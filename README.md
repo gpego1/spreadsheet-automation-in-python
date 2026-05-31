@@ -38,7 +38,7 @@ Antes de executar o código, certifique-se de ter:
    ```bash
    git clone [https://github.com/gpego1/spreadsheet-automation-in-python.git](https://github.com/gpego1/spreadsheet-automation-in-python.git)
    cd spreadsheet-automation-in-python
-   
+
 2. Crie Ambiente Virtual
     ```bash
     python -m venv venv
@@ -49,11 +49,12 @@ Antes de executar o código, certifique-se de ter:
    pip install -r requirements.txt
 
 ### 3. Variáveis de Ambiente
- ```bash
-   FILE_NAME=caminho/para/o/seu/credentials.json
-   OPENAI_API_KEY=sua_api_key
-   BASE_URL=sua base_url
-   MODEL=seu modelo de llm
+   1. Configurar arquivo .env
+   ```bash
+      FILE_NAME=caminho/para/o/seu/credentials.json
+      OPENAI_API_KEY=sua_api_key
+      BASE_URL=sua base_url
+      MODEL=seu modelo de llm
 
 ### 4. Executar projeto
 ```bash 
