@@ -57,6 +57,7 @@ Antes de executar o código, certifique-se de ter:
       MODEL=seu modelo de llm
 
 ### 4. Executar projeto
-```bash 
-   python main.py
+   1. Executar o projeto
+   ```bash 
+       python main.py
 
