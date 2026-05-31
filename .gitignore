@@ -1,6 +1,7 @@
 .env
 credentials.json
-/__pycache
+/__pycache__
 __pycache__/csv_generator.cpython-314.pyc
 __pycache__/llm_client.cpython-314.pyc
 __pycache__/processor.cpython-314.pyc
+/venv
